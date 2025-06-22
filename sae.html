@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compétences SAE - Portfolio BUT2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon-iut-violet.png">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div>
+        <h1>Compétences développées via les SAE</h1>
+      </div>
+      <img src="img/logo-iut-vannes-transparent.png" alt="Logo IUT de Vannes">
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="sae.html">Compétences SAE</a>
+    <a href="stage.html">Compétences Stage</a>
+    <a href="avenir.html">Objectifs & 3e Année</a>
+  </nav>
+
+  <section>
+    <h2>Ce que j'ai appris des deux SAE les plus intéressantes à mes yeux</h2>
+
+    <div class="card">
+  <h3>SAÉ 3.03 – Description et prévision de données temporelles</h3>
+  <p>
+    Dans le cadre de la SAÉ 3.03, j’ai été amené à analyser statistiquement une série temporelle représentant la production d’énergie solaire en France, de 2012 à 2025. Cette étude m’a permis de comprendre la spécificité des données chronologiques et d’appliquer des méthodes adaptées à leur traitement, conformément aux objectifs du programme national.
+  </p>
+
+  <p>
+    En mobilisant le langage R, j’ai appris à manipuler et modéliser des séries temporelles, en identifiant des tendances linéaires, une forte saisonnalité annuelle et en choisissant un <strong>modèle multiplicatif</strong> pertinent pour la représentation des données. J’ai travaillé à la fois sur les données journalières et mensuelles pour rendre compte des comportements globaux et des variations fines.
+  </p>
+
+  <img src="img/Graf303.png" alt="Production solaire journalière" style="width: 100%; max-width: 700px; margin: 1em 0;" />
+  <p>
+    La figure ci-dessus montre une forte croissance de la production solaire, avec des pics saisonniers récurrents. Cette régularité m’a permis de justifier l’utilisation d’un modèle avec saisonnalité annuelle et de commencer une démarche de prévision à court terme.
+  </p>
+
+  <img src="img/Mensuel303.png" alt="Production solaire mensuelle" style="width: 100%; max-width: 700px; margin: 1em 0;" />
+  <p>
+    Le graphique mensuel simplifie l’analyse en faisant ressortir plus clairement la tendance générale. Ces représentations concrètes traduisent la montée en puissance des énergies renouvelables et renforcent l'importance de l’analyse temporelle dans la prise de décisions économiques.
+  </p>
+
+  <p>
+    Ce projet m’a permis de développer plusieurs compétences du PN, notamment :
+    <ul>
+      <li><strong>Analyser statistiquement des données temporelles</strong> (AC22.02) et comprendre leurs particularités (saisonnalité, tendance, cyclicité).</li>
+      <li><strong>Valoriser une production dans un contexte professionnel</strong> (AC23.03, AC23.04), en produisant des visualisations claires et en interprétant les résultats avec rigueur.</li>
+      <li><strong>Choisir des indicateurs pertinents</strong> pour appuyer une analyse (AC23.02) et justifier mes choix méthodologiques (AC22.05).</li>
+      <li><strong>Utiliser un langage de programmation statistique</strong> (R) pour automatiser l’analyse et améliorer la reproductibilité.</li>
+    </ul>
+  </p>
+</div>
+
+<div class="card">
+  <h3>SAÉ 4.01 (EMS) – Expliquer ou prédire une variable quantitative</h3>
+  <p>
+    Dans cette SAÉ, j’ai été placé en situation de statisticien pour modéliser une variable quantitative (comme le nombre de points marqués par des joueurs NBA) à partir de plusieurs variables explicatives (taille, temps de jeu, position, nombre de tirs tentés, etc.). L’objectif était de construire un modèle linéaire pertinent et interprétable pour expliquer ou prédire cette variable.
+  </p>
+
+  <p>
+    J’ai mobilisé plusieurs outils statistiques, notamment :
+    <ul>
+      <li>Régression linéaire multiple pour modéliser la relation entre la variable cible et les variables explicatives</li>
+      <li>Analyse de la significativité des coefficients (p-value, intervalles de confiance)</li>
+      <li>Évaluation de la qualité du modèle avec <strong>R² ajusté</strong>, AIC, analyse des résidus</li>
+      <li>Techniques de sélection de variables (stepwise, backward, AIC/BIC)</li>
+    </ul>
+  </p>
+
+  <!-- Exemple d'image de régression à insérer -->
+  <img src="img/choixmodele.png" alt="Choix du modèle de régression NBA" style="width: 100%; max-width: 700px; margin: 1em 0;" />
+<p>
+  Ce graphique représente le processus de sélection du modèle linéaire multivarié appliqué aux données NBA. On y observe les combinaisons de variables explicatives (comme les rebonds, passes, efficacité au tir, etc.) qui permettent de mieux prédire les points marqués par les joueurs. L’échelle verticale montre la qualité d’ajustement (R²), et chaque case noire indique la présence d’une variable dans un modèle donné. Cette analyse permet d’identifier les variables les plus pertinentes à inclure pour maximiser la performance du modèle.
+</p>
+
+<img src="img/modele_regression.png" alt="Modèle de régression NBA" style="width: 100%; max-width: 700px; margin: 1em 0;" />
+  <p>
+Voici un extrait du modèle exprimant les points marqués par un joueur NBA en fonction de plusieurs variables explicatives, notamment ses statistiques de jeu et son historique de draft
+</p>
+
+  <img src="img/analyse_residus.png" alt="Analyse des résidus" style="width: 100%; max-width: 700px; margin: 1em 0;" />
+  <p>
+    L’analyse des résidus permet de valider la qualité du modèle (homoscédasticité, absence de tendance résiduelle) et d’identifier les points aberrants influents.
+  </p>
+
+  <p>
+    Cette SAÉ m’a permis de développer des compétences clés du PN :
+    <ul>
+      <li><strong>Modéliser des données dans un cadre statistique</strong> (AC24.03EMS), en choisissant un modèle adapté au type de données.</li>
+      <li><strong>Analyser statistiquement les données</strong> (AC22.01, AC22.04), en comparant plusieurs modèles et en interprétant les résultats.</li>
+      <li><strong>Valoriser une production</strong> (AC23.03, AC23.04), via une restitution visuelle et argumentée des résultats.</li>
+      <li><strong>Défendre ses choix méthodologiques</strong> (AC23.02), notamment dans le choix des variables et des critères de sélection.</li>
+      <li><strong>Utiliser R pour automatiser l’analyse</strong>, produire des visualisations et interpréter les sorties des modèles.</li>
+    </ul>
+  </p>
+
+  <p>
+    Grâce à cette SAE, j’ai mieux compris les enjeux de la modélisation prédictive dans un contexte professionnel, et appris à articuler rigueur mathématique, outils numériques et capacité à justifier mes choix d’analyse.
+  </p>
+</div>
+  </section>
+
+  <footer>
+    2025 - Portfolio BUT2 - IUT de Vannes
+  </footer>
+</body>
+</html>
